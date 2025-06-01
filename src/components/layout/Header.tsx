@@ -29,7 +29,7 @@ export function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
       <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
         <Link href="#hero" className="text-2xl font-bold font-headline text-primary">
-          Profolio AI
+          Samith S Palan
         </Link>
         <nav className="hidden md:flex items-center space-x-2 lg:space-x-4">
           {navItems.map((item) => (
@@ -48,7 +48,7 @@ export function Header() {
           <SheetContent side="right">
             <nav className="grid gap-6 text-lg font-medium mt-8">
             <Link href="#hero" className="mb-6 text-2xl font-bold font-headline text-primary">
-              Profolio AI
+              Samith S Palan
             </Link>
               {navItems.map((item) => (
                 <Link

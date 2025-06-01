@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Profolio AI - Personal Portfolio',
+  title: 'Samith S Palan - Personal Portfolio',
   description: 'A modern portfolio showcasing professional experience, projects, and skills, with AI-powered summaries.',
 };
 

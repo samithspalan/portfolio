@@ -60,12 +60,8 @@ export function AboutSection() {
             </CardHeader>
             <CardContent className="space-y-2 text-muted-foreground">
               <div>
-                <h3 className="font-semibold text-foreground">M.Sc. in Computer Science</h3>
-                <p className="text-sm">University of Advanced Technology | 2016 - 2018</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground">B.Sc. in Software Engineering</h3>
-                <p className="text-sm">State University | 2012 - 2016</p>
+                <h3 className="font-semibold text-foreground">B.E. in Computer Science Engineering</h3>
+                <p className="text-sm">SCEM, Mangalore | 2023 - 2027</p>
               </div>
             </CardContent>
           </Card>
