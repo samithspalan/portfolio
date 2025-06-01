@@ -5,8 +5,8 @@ import Link from 'next/link';
 const socialLinks = [
   { name: 'Email', href: 'mailto:samith7755@gmail.com', icon: <Mail className="h-5 w-5" /> },
   { name: 'LinkedIn', href: 'https://linkedin.com/in/yourprofile', icon: <Linkedin className="h-5 w-5" /> },
-  { name: 'GitHub', href: 'https://github.com/yourusername', icon: <Github className="h-5 w-5" /> },
-  { name: 'Twitter', href: 'https://twitter.com/yourusername', icon: <Twitter className="h-5 w-5" /> },
+  { name: 'GitHub', href: 'https://github.com/samithspalan', icon: <Github className="h-5 w-5" /> },
+  { name: 'Twitter', href: 'https://twitter.com/samith17118', icon: <Twitter className="h-5 w-5" /> },
 ];
 
 export function SocialLinks() {
