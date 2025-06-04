@@ -1,28 +1,47 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section id="hero" className="w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/30 scroll-mt-16">
-      <div className="container mx-auto max-w-6xl px-4 md:px-6 text-center section-fade-in" style={{ animationDelay: '0.2s' }}>
-        <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 rounded-full overflow-hidden shadow-xl border-4 border-primary/50">
-           <Image src="/samith-profile.jpg" alt="Samith S Palan Profile Picture (Next/Image)" layout="fill" objectFit="cover" className="object-top" data-ai-hint="professional portrait" />
-        </div>
-        {/* Standard HTML img tag for debugging */}
-        <div style={{ marginTop: '10px', border: '1px solid red', padding: '5px' }}>
-          <p style={{fontSize: '12px', color: 'red' }}>Debugging HTML img tag:</p>
-          <img src="/samith-profile.jpg" alt="Samith S Palan Profile Picture (HTML img)" style={{ width: '100px', height: '100px', border: '1px solid blue' }} />
-        </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-headline tracking-tight">
-          <span className="block">Hello, I&apos;m </span>
-          <span className="block text-primary mt-2">Samith</span>
-        </h1>
-        <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground">
-          A passionate Full Stack Developer transforming ideas into innovative web solutions. Explore my work and let&apos;s build something amazing together.
+    <section 
+      id="hero" 
+      className="w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-background to-secondary/30 scroll-mt-16 text-center overflow-hidden"
+    >
+      <div className="container mx-auto max-w-4xl px-4 md:px-6 py-20 md:py-32">
+        <p 
+          className="text-2xl md:text-3xl text-muted-foreground mb-2 section-fade-in" 
+          style={{ animationDelay: '0.2s' }}
+        >
+          Hello, I&apos;m
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <h1 
+          className="text-6xl sm:text-7xl md:text-8xl font-bold font-headline tracking-tight text-primary mb-6 section-fade-in" 
+          style={{ animationDelay: '0.4s' }}
+        >
+          Samith
+        </h1>
+        <div 
+          className="mb-6 section-fade-in min-h-[60px] md:min-h-[70px]" // Added min-height for stability
+          style={{ animationDelay: '0.6s' }}
+        >
+          <p className="text-xl md:text-2xl font-semibold text-foreground">
+            A Passionate Full Stack Developer
+          </p>
+          <p className="text-lg md:text-xl text-accent mt-1">
+            Innovator | Problem Solver | Lifelong Learner
+          </p>
+        </div>
+        <p 
+          className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground mb-10 section-fade-in" 
+          style={{ animationDelay: '0.8s' }}
+        >
+          Transforming ideas into innovative web solutions. Explore my work and let&apos;s build something amazing together.
+        </p>
+        <div 
+          className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 section-fade-in" 
+          style={{ animationDelay: '1.0s' }}
+        >
           <Button asChild size="lg" className="font-semibold">
             <Link href="#projects">View My Work</Link>
           </Button>
