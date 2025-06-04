@@ -1,7 +1,7 @@
+
 'use client';
 
 import type { Project } from '@/types';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -38,16 +38,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
-      <div className="relative w-full h-48 md:h-56">
-        <Image 
-          src={project.imageUrl} 
-          alt={project.title} 
-          layout="fill" 
-          objectFit="cover" 
-          className="transition-transform duration-300 group-hover:scale-105"
-          data-ai-hint={project.imageHint}
-        />
-      </div>
       <CardHeader>
         <CardTitle className="font-headline text-xl md:text-2xl">{project.title}</CardTitle>
         <CardDescription className="text-sm text-primary">{project.category}</CardDescription>
@@ -82,11 +72,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </Button>
           )}
         </div>
-        <Button 
-            size="sm" 
-            onClick={handleGenerateSummary} 
-            disabled={isLoading || isPending} 
-            className="bg-accent hover:bg-accent/90 text-accent-foreground w-full sm:w-auto"
+        <Button
+            size="sm"
+            onClick={handleGenerateSummary}
+            disabled={isLoading || isPending}
+            className="bg-accent hover:bg-accent/90 text-accent-foreground w-full sm:w-auto mt-2 sm:mt-0"
           >
             {isLoading || isPending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Sparkles className="mr-2 h-4 w-4" />}
             Generate Summary

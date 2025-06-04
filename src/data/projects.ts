@@ -1,3 +1,4 @@
+
 import type { Project } from '@/types';
 
 export const projectsData: Project[] = [
@@ -5,8 +6,6 @@ export const projectsData: Project[] = [
     id: '1',
     title: 'E-commerce Platform',
     category: 'Web Development',
-    imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'online shopping',
     projectUrl: 'https://example.com/ecommerce',
     repoUrl: 'https://github.com/example/ecommerce',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'Stripe'],
@@ -17,8 +16,6 @@ export const projectsData: Project[] = [
     id: '2',
     title: 'AI Chatbot Assistant',
     category: 'Artificial Intelligence',
-    imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'chatbot interface',
     projectUrl: 'https://example.com/chatbot',
     technologies: ['Python', 'Flask', 'NLP', 'Docker', 'Dialogflow'],
     rawDescription: 'Built an AI-powered chatbot for customer service. It uses Natural Language Processing to understand user queries and provide relevant responses. Deployed using Docker and Flask. The chatbot improved customer satisfaction by 20% and reduced response times significantly.',
@@ -28,8 +25,6 @@ export const projectsData: Project[] = [
     id: '3',
     title: 'Mobile Fitness Tracker',
     category: 'Mobile App Development',
-    imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'fitness app',
     repoUrl: 'https://github.com/example/fitness-app',
     technologies: ['React Native', 'Firebase', 'Expo', 'Google Fit API'],
     rawDescription: 'Created a cross-platform mobile application for tracking fitness activities like running, cycling, and gym workouts. Features include GPS tracking, workout logging, progress charts, and social sharing. Used Firebase for backend services including authentication and database. Leveraged Expo for faster development cycles.',
