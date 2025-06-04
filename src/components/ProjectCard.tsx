@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 import React from 'react';
 
 interface ProjectCardProps {
@@ -35,15 +35,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </div>
       </CardContent>
-      <CardFooter className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2 pt-4 border-t">
+      <CardFooter className="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-2 pt-4 border-t">
         <div className="flex gap-2">
-          {project.projectUrl && (
-            <Button variant="outline" size="sm" asChild>
-              <Link href={project.projectUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-              </Link>
-            </Button>
-          )}
           {project.repoUrl && (
             <Button variant="outline" size="sm" asChild>
               <Link href={project.repoUrl} target="_blank" rel="noopener noreferrer">
@@ -56,4 +49,3 @@ export function ProjectCard({ project }: ProjectCardProps) {
     </Card>
   );
 }
-
