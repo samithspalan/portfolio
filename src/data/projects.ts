@@ -38,4 +38,23 @@ export const projectsData: Project[] = [
     rawDescription: 'Designed and developed a website for a local food delivery service. Features included restaurant listings, menu browsing, order placement, and user account management. Focused on a user-friendly interface and efficient order processing.',
     summary: 'A comprehensive food delivery website enabling users to order from local restaurants, featuring menus, and order management.',
   },
+  {
+    id: '5',
+    title: 'Disaster Management System',
+    category: 'Web Application / Social Impact',
+    repoUrl: 'https://github.com/Arjun13-git/Disaster_Alert_Mgt.git',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'APIs'],
+    rawDescription: 'Developed a system for managing and alerting users about disasters. This project focuses on providing timely information and resources during critical events, leveraging mapping and notification services.',
+    summary: 'A web-based system for disaster alerts and management, aimed at improving response and communication during emergencies.',
+  },
+  {
+    id: '6',
+    title: 'Rest Countries Explorer',
+    category: 'Web Application / API Integration',
+    repoUrl: 'https://github.com/samithspalan/Rest-Countries-Explorer.git',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'APIs'],
+    rawDescription: 'A web application that allows users to explore information about countries using the REST Countries API. Features include searching, filtering, and displaying detailed country data in a user-friendly interface.',
+    summary: 'An interactive web app to browse and search for information about countries worldwide, using the REST Countries API.',
+  },
 ];
+
