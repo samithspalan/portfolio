@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section id="hero" className="w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/30 scroll-mt-[-100vh]">
+    <section id="hero" className="w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/30 scroll-mt-16">
       <div className="container mx-auto max-w-6xl px-4 md:px-6 text-center section-fade-in" style={{ animationDelay: '0.2s' }}>
         <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 rounded-full overflow-hidden shadow-xl border-4 border-primary/50">
            <Image src="https://placehold.co/200x200.png" alt="Samith" layout="fill" objectFit="cover" data-ai-hint="professional portrait" />
