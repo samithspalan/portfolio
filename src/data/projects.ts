@@ -4,30 +4,40 @@ import type { Project } from '@/types';
 export const projectsData: Project[] = [
   {
     id: '1',
-    title: 'E-commerce Platform',
+    title: 'Amazon Clone',
     category: 'Web Development',
-    projectUrl: 'https://example.com/ecommerce',
-    repoUrl: 'https://github.com/example/ecommerce',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'Stripe'],
-    rawDescription: 'Developed a full-stack e-commerce platform with features like product listings, shopping cart, user authentication, and order management. Focused on a responsive UI and scalable backend architecture. Integrated Stripe for payment processing. Used agile methodologies for project management.',
-    summary: 'A comprehensive e-commerce solution enabling seamless online shopping experiences with robust backend functionalities.',
+    projectUrl: '#', // Replace with actual URL if available
+    repoUrl: '#', // Replace with actual URL if available
+    technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+    rawDescription: 'Developed a full-featured clone of the Amazon e-commerce platform. Implemented core functionalities such as product browsing, user authentication, shopping cart, and a simplified checkout process. Focused on creating a responsive user interface and a scalable backend.',
+    summary: 'A functional Amazon clone showcasing full-stack development skills, including product listings, user accounts, and cart management.',
   },
   {
     id: '2',
-    title: 'AI Chatbot Assistant',
+    title: 'AI Chatbot',
     category: 'Artificial Intelligence',
-    projectUrl: 'https://example.com/chatbot',
-    technologies: ['Python', 'Flask', 'NLP', 'Docker', 'Dialogflow'],
-    rawDescription: 'Built an AI-powered chatbot for customer service. It uses Natural Language Processing to understand user queries and provide relevant responses. Deployed using Docker and Flask. The chatbot improved customer satisfaction by 20% and reduced response times significantly.',
-    summary: 'An intelligent chatbot leveraging NLP to enhance customer service efficiency and user satisfaction.',
+    projectUrl: '#', // Replace with actual URL if available
+    technologies: ['Python', 'Flask', 'NLTK', 'TensorFlow/Keras', 'React'],
+    rawDescription: 'Built an intelligent AI chatbot capable of understanding natural language queries and providing relevant responses. The chatbot was designed for customer service applications, trained on a custom dataset, and integrated with a simple web interface.',
+    summary: 'An AI-powered chatbot designed for customer interaction, utilizing natural language processing to understand and respond to user queries.',
   },
   {
     id: '3',
-    title: 'Mobile Fitness Tracker',
-    category: 'Mobile App Development',
-    repoUrl: 'https://github.com/example/fitness-app',
-    technologies: ['React Native', 'Firebase', 'Expo', 'Google Fit API'],
-    rawDescription: 'Created a cross-platform mobile application for tracking fitness activities like running, cycling, and gym workouts. Features include GPS tracking, workout logging, progress charts, and social sharing. Used Firebase for backend services including authentication and database. Leveraged Expo for faster development cycles.',
-    summary: 'A feature-rich mobile fitness tracker designed to help users monitor activities and achieve health goals.',
+    title: 'Image Background Remover',
+    category: 'Web Application / AI',
+    repoUrl: '#', // Replace with actual URL if available
+    technologies: ['Python', 'Flask', 'OpenCV', 'Deep Learning Model', 'JavaScript'],
+    rawDescription: 'Created a web application that allows users to upload images and automatically remove their backgrounds. This project involved using computer vision techniques and a pre-trained deep learning model for accurate background segmentation.',
+    summary: 'A tool that automatically removes backgrounds from images using AI and computer vision techniques.',
+  },
+  {
+    id: '4',
+    title: 'Food Delivery Website',
+    category: 'Web Development',
+    projectUrl: '#', // Replace with actual URL if available
+    technologies: ['PHP', 'Laravel', 'MySQL', 'Bootstrap', 'JavaScript'],
+    rawDescription: 'Designed and developed a website for a local food delivery service. Features included restaurant listings, menu browsing, order placement, and user account management. Focused on a user-friendly interface and efficient order processing.',
+    summary: 'A comprehensive food delivery website enabling users to order from local restaurants, featuring menus, and order management.',
   },
 ];
+

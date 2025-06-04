@@ -6,35 +6,15 @@ import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { ExternalLink, Github, Sparkles, Loader2 } from 'lucide-react';
-import React, { useState, useTransition } from 'react';
-import { generateProjectSummaryAction } from '@/lib/actions';
-import { useToast } from '@/hooks/use-toast';
+import { ExternalLink, Github } from 'lucide-react';
+import React from 'react';
 
 interface ProjectCardProps {
   project: Project;
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const [summary, setSummary] = useState(project.summary || 'Click below to generate an AI-powered summary.');
-  const [isLoading, setIsLoading] = useState(false);
-  const { toast } = useToast();
-  const [isPending, startTransition] = useTransition();
-
-  const handleGenerateSummary = () => {
-    setIsLoading(true);
-    startTransition(async () => {
-      const result = await generateProjectSummaryAction(project.rawDescription);
-      if (result.summary) {
-        setSummary(result.summary);
-        toast({ title: "Summary Generated!", description: "AI successfully summarized the project." });
-      } else {
-        setSummary(project.summary || 'Failed to generate summary. Please try again.');
-        toast({ variant: "destructive", title: "Error", description: result.error || "Unknown error generating summary." });
-      }
-      setIsLoading(false);
-    });
-  };
+  const summaryText = project.summary || "A brief description of this project.";
 
   return (
     <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
@@ -44,7 +24,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardHeader>
       <CardContent className="flex-grow">
         <p className="text-muted-foreground text-sm mb-4 min-h-[60px]">
-          {summary}
+          {summaryText}
         </p>
         <div className="mb-4">
           <h4 className="font-semibold text-sm mb-2 text-foreground">Technologies Used:</h4>
@@ -72,16 +52,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </Button>
           )}
         </div>
-        <Button
-            size="sm"
-            onClick={handleGenerateSummary}
-            disabled={isLoading || isPending}
-            className="bg-accent hover:bg-accent/90 text-accent-foreground w-full sm:w-auto mt-2 sm:mt-0"
-          >
-            {isLoading || isPending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Sparkles className="mr-2 h-4 w-4" />}
-            Generate Summary
-        </Button>
       </CardFooter>
     </Card>
   );
 }
+
