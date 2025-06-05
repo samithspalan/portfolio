@@ -46,6 +46,6 @@ _Update this with your deployed URL_
 If you’d like to connect, feel free to reach out via:
 
 - LinkedIn: [linkedin.com/in/samithspalan](https://linkedin.com/in/samithspalan)
-- Email: samithspalan@example.com  
+- Email: samithpalan@example.com  
 _Update with actual details_
 
