@@ -12,8 +12,8 @@ body {
 
 @layer base {
   :root {
-    --background: 231 33% 97%; /* Very Light Indigo #E8EAF6 */
-    --foreground: 233 36% 21%; /* Dark Indigo for text */
+    --background: 231 33% 97%; 
+    --foreground: 233 36% 21%; 
     --card: 0 0% 100%; /* White card */
     --card-foreground: 233 36% 21%;
     --popover: 0 0% 100%;
